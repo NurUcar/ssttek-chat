@@ -13,6 +13,8 @@ module.exports = {
 				yellowGreen: '#16c607',
 				aliceBlue: '#F4F8FF',
 				darkGunmetal: '#1E2532 ',
+				paleCerulean: '#A3B8E0',
+				tulip: '#fa8299',
 			},
 			letterSpacing: {
 				custom: '.14em',

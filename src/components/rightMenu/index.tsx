@@ -1,3 +1,4 @@
+import RightMenuBody from "@/components/rightMenu/subComponents/rightMenuBody";
 import RightMenuTop from "@/components/rightMenu/subComponents/rightMenuTop";
 import { useAppDispatch } from "@/store/store";
 import { useWindowSize } from "@/utils/useWindowSize";
@@ -11,6 +12,7 @@ const RightMenu = () => {
     return (
         <div className='w-[340px] '>
             <RightMenuTop />
+            <RightMenuBody />
         </div>
     );
 

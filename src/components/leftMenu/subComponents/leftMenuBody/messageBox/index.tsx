@@ -36,7 +36,7 @@ const MessageBox = ({ isCurrent, avatar, userName, lastMessage, lastConversation
 
     }, [])
 
-    console.log(bgColor)
+
     return (
         <div className={classNames('flex w-full border-t border-solid border-platinum opacity-100 h-[102px] px-[18px] py-[25px]',
             isCurrent && "bg-darkGunmetal/[.08]")}>

@@ -23,13 +23,14 @@ const Button = (props: IDefaultButtonProps) => {
       type={type}
       disabled={isLoading || disabled}
       className={classNames(
-        " rounded-[40px] transition-all flex items-center justify-center",
+        " rounded-[60px] transition-all flex items-center justify-center",
         `bg-${color}`,
         className)}
       {...rest}
     >
       {leftIcon && <div>{leftIcon}</div>}
-
+      <span className={classNames("px-2 ", spanClassName)}>{children}</span>
+      {rightIcon && <div>{rightIcon}</div>}
     </button>
   );
 };
