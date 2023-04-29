@@ -23,7 +23,7 @@ const Button = (props: IDefaultButtonProps) => {
       type={type}
       disabled={isLoading || disabled}
       className={classNames(
-        "font-Roboto rounded-[40px] transition-all flex items-center justify-center",
+        " rounded-[40px] transition-all flex items-center justify-center",
         `bg-${color}`,
         className)}
       {...rest}

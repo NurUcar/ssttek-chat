@@ -23,7 +23,7 @@ function MyApp({
 }: AppPropsWithLayout) {
 	const getLayout = Component.getLayout || ((page) => page);
 	return (
-		<Provider store={store}>
+		<Provider store={store} >
 			{getLayout(<Component {...pageProps} />)}{" "}
 		</Provider>
 	);

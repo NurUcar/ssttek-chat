@@ -8,6 +8,9 @@ module.exports = {
 			},
 			colors: {
 				philippineGray: '#8B8B8B',
+				darkGunmetal: '#1e2532',
+				platinum: '#E8E8E8',
+				yellowGreen: '#16c607',
 			},
 		},
 	},
