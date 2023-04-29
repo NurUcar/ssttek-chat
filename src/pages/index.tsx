@@ -1,3 +1,6 @@
+import LeftMenu from "@/components/leftMenu";
+import MessageContainer from "@/components/messageContainer";
+import RightMenu from "@/components/rightMenu";
 import { dashboardExampleAsyncAction } from "@/store/asyncActions/dashboard";
 import { useAppDispatch, useAppSelector } from "@/store/store";
 import type { NextPage } from "next";
@@ -17,8 +20,10 @@ const Home: NextPage<any> = (props) => {
 	}
 
 	return (
-		<div>
-			{title} --- {dummyResponse}
+		<div className="flex flex-row w-full bg-white">
+			<LeftMenu />
+			<MessageContainer />
+			<RightMenu />
 		</div>
 	);
 };

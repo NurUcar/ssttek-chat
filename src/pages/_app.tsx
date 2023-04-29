@@ -4,7 +4,6 @@ import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import { ReactElement, ReactNode } from "react";
 import { Provider } from "react-redux";
-
 import { install } from "resize-observer";
 
 if (typeof window !== "undefined" && !window.ResizeObserver) {

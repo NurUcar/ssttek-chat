@@ -13,6 +13,7 @@
     "@next/bundle-analyzer": "^12.2.5",
     "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
+    "framer-motion": "^10.12.4",
     "i18next": "^21.9.1",
     "next": "12.2.5",
     "next-redux-wrapper": "^7.0.5",
@@ -20,6 +21,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "^11.18.5",
     "react-redux": "^8.0.2",
+    "react-select": "^5.7.2",
     "resize-observer": "^1.0.4"
   },
   "devDependencies": {

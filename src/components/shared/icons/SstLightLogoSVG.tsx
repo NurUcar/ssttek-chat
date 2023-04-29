@@ -1,7 +1,7 @@
 import { IIconProps } from "@/services/types/propTypes/icon";
 
 
-const sstLightLogoSVG = ({ className = "" }: IIconProps) => {
+const SstLightLogoSVG = ({ className = "" }: IIconProps) => {
     return (
         <svg width="177" height="40" viewBox="0 0 177 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
             <path d="M165.424 11.2279V29.2728H148.461V11.2279H165.424Z" fill="#FF3159" />
@@ -12,4 +12,4 @@ const sstLightLogoSVG = ({ className = "" }: IIconProps) => {
     );
 };
 
-export { sstLightLogoSVG };
+export { SstLightLogoSVG };
