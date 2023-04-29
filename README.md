@@ -4,7 +4,8 @@
 
 First, install the dependencies by running `yarn install`. <br />
 To initialize husky hooks run `yarn prepare`.<br />
-To run the development server `yarn dev`.
+To run the development server `yarn dev`.<br />
+To auto run the development server (f5+fn)
 
 ## Git Merge Conflict Bypass Husky
 
