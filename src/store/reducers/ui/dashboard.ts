@@ -1,15 +1,15 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface DashboardState {
 	title: string;
 }
 
 export const initialDashboardState: DashboardState = {
-	title: "Dashboard",
+	title: 'Home',
 };
 
 export const dashboardReducer = createSlice({
-	name: "dashboard.ui",
+	name: 'dashboard.ui',
 	initialState: initialDashboardState,
 	reducers: {
 		helloWorld: (state: DashboardState, action: PayloadAction<string>) => {

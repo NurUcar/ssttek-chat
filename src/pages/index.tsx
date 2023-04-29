@@ -1,11 +1,17 @@
 import { dashboardExampleAsyncAction } from "@/store/asyncActions/dashboard";
-import { useAppSelector, wrapper } from "@/store/store";
+import { useAppDispatch, useAppSelector } from "@/store/store";
 import type { NextPage } from "next";
+import { useEffect } from "react";
 
-const Dashboard: NextPage<any> = (props) => {
+const Home: NextPage<any> = (props) => {
+	const dispatch = useAppDispatch();
 	const { title } = useAppSelector((state) => state.ui.dashboard);
 	const { fetchDasboardStatus, dummyResponse } = useAppSelector((state) => state.api.dashboard);
 
+	useEffect(() => {
+		dispatch(dashboardExampleAsyncAction());
+	}, [dummyResponse])
+	console.log(title)
 	if (fetchDasboardStatus === "loading") {
 		return <div>loading</div>;
 	}
@@ -17,11 +23,5 @@ const Dashboard: NextPage<any> = (props) => {
 	);
 };
 
-export const getServerSideProps = wrapper.getServerSideProps(({ dispatch }) => async ({ params }) => {
-	await dispatch(dashboardExampleAsyncAction());
 
-	return {
-		props: {},
-	};
-});
-export default Dashboard;
+export default Home;
