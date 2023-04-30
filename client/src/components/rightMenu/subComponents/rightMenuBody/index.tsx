@@ -44,24 +44,18 @@ const RightMenuBody = () => {
                     <span className="font-medium text-base leading-[19px] text-black">bot_face.jpg</span>
                 </div>
             </div>
-
-
             <div className="w-full flex justify-start my-12 pl-9">
                 <Button buttonType="ghost">
                     View All
                 </Button>
             </div>
             <div className="w-full flex justify-center">
-
                 <Button
                     className="w-[235px] h-[42px] bg-tulip"
-                    spanClassName="text-white"
-                >
+                    spanClassName="text-white" >
                     React
                 </Button>
             </div>
-
-
         </div >
     );
 
