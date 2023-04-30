@@ -16,6 +16,7 @@ module.exports = {
 				paleCerulean: '#A3B8E0',
 				tulip: '#fa8299',
 				darkLiver: '#515151',
+				vividCerulean: '#01AAF3',
 			},
 			letterSpacing: {
 				custom: '.14em',

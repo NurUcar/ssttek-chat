@@ -1,6 +1,6 @@
-import ChatContainerBody from "@/components/messageContainer/subComponents/chatContainerBody";
-import ChatContainerBottom from "@/components/messageContainer/subComponents/chatContainerBottom";
-import ChatContainerTop from "@/components/messageContainer/subComponents/chatContainerTop";
+import ChatContainerBody from "@/components/chatContainer/subComponents/chatContainerBody";
+import ChatContainerBottom from "@/components/chatContainer/subComponents/chatContainerBottom";
+import ChatContainerTop from "@/components/chatContainer/subComponents/chatContainerTop";
 import { SstUserSVG } from "@/components/shared/icons/SstUserSVG";
 import { useAppDispatch } from "@/store/store";
 import { useWindowSize } from "@/utils/useWindowSize";

@@ -1,17 +1,10 @@
-import MessageBox from "@/components/leftMenu/subComponents/leftMenuBody/messageBox";
+import ChatBox from "@/components/leftMenu/subComponents/leftMenuBody/chatBox";
 import { SstUserSVG } from "@/components/shared/icons/SstUserSVG";
-import { useAppDispatch } from "@/store/store";
-import { useWindowSize } from "@/utils/useWindowSize";
-import { useRouter } from "next/router";
 
 const LeftMenuBody = () => {
-    const { width } = useWindowSize();
-    const dispatch = useAppDispatch();
-    const router = useRouter();
-
     return (
         <div className='flex flex-col w-full overflow-hidden  hover:overflow-scroll scrollbar-hide '>
-            <MessageBox
+            <ChatBox
                 avatar={<SstUserSVG className="w-[61px] h-[13px]" />}
                 userName={""}
                 isCurrent={true}
@@ -19,13 +12,13 @@ const LeftMenuBody = () => {
                 lastMessage={"Living the dream"}
                 isActiveUser={true}
             />
-            <MessageBox
+            <ChatBox
                 isCurrent={false}
                 userName={"Nur Uçar"}
                 lastConversationTime={"3 hours ago"}
                 lastMessage={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"}
                 isActiveUser={false} />
-            <MessageBox
+            <ChatBox
                 isCurrent={false}
                 userName={"Yağmur Çabuk"}
                 lastConversationTime={"Jul 27"}

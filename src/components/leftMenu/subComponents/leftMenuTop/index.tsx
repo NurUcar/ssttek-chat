@@ -13,13 +13,11 @@ const LeftMenuTop = () => {
                     </span>
                     <DownSVG className="w-3 h-[7px]" />
                 </div>
-
                 <Button.Icon
                     icon={SettingSVG}
                     className="w-5 h-5"
                     onClick={() => { alert("icon button clicked") }}
                 />
-
             </div>
         </div >
     );

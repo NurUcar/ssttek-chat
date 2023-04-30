@@ -11,6 +11,4 @@ const RightMenu = () => {
 
 };
 
-
-
 export default RightMenu;

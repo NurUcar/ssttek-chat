@@ -1,5 +1,5 @@
+import MessageContainer from "@/components/chatContainer";
 import LeftMenu from "@/components/leftMenu";
-import MessageContainer from "@/components/messageContainer";
 import RightMenu from "@/components/rightMenu";
 import type { NextPage } from "next";
 

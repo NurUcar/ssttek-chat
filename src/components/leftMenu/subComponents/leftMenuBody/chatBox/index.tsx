@@ -3,7 +3,7 @@ import { SstDarkLogoSVG } from "@/components/shared/icons/SstDarkLogoSVG";
 import { classNames } from "@/utils/classNames";
 import { ReactElement } from "react";
 
-interface IMessageBoxProps {
+interface IChatBoxProps {
     //Currently talking this user
     isCurrent: boolean;
     // contain user pp
@@ -15,10 +15,7 @@ interface IMessageBoxProps {
     isActiveUser: boolean;
 
 }
-const MessageBox = ({ isCurrent, avatar, userName, lastMessage, lastConversationTime, isActiveUser }: IMessageBoxProps) => {
-
-
-
+const ChatBox = ({ isCurrent, avatar, userName, lastMessage, lastConversationTime, isActiveUser }: IChatBoxProps) => {
 
     return (
         <div className={classNames('flex w-full border-t border-solid border-platinum opacity-100 h-[102px] px-[18px] py-[25px]',
@@ -63,7 +60,6 @@ const MessageBox = ({ isCurrent, avatar, userName, lastMessage, lastConversation
                                 </div> :
                                 <span className="text-philippineGray text-[13px] leading-4 font-light items-end">{lastConversationTime}</span>
                         }
-
                     </div>
                 </div>
 
@@ -73,6 +69,4 @@ const MessageBox = ({ isCurrent, avatar, userName, lastMessage, lastConversation
 
 };
 
-
-
-export default MessageBox;
+export default ChatBox;
