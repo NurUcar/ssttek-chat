@@ -15,6 +15,7 @@ module.exports = {
 				darkGunmetal: '#1E2532 ',
 				paleCerulean: '#A3B8E0',
 				tulip: '#fa8299',
+				darkLiver: '#515151',
 			},
 			letterSpacing: {
 				custom: '.14em',
