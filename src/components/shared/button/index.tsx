@@ -13,6 +13,7 @@ const Button = (props: IDefaultButtonProps) => {
     color = "red",
     leftIcon,
     rightIcon,
+    buttonType,
     type = "button",
     isLoading = false,
     ...rest
@@ -25,6 +26,8 @@ const Button = (props: IDefaultButtonProps) => {
       className={classNames(
         " rounded-[60px] transition-all flex items-center justify-center",
         `bg-${color}`,
+        buttonType === "ghost" &&
+        "font-normal text-base text-blueJeans disabled:text-philippineGray",
         className)}
       {...rest}
     >

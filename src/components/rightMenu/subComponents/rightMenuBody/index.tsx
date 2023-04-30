@@ -45,7 +45,12 @@ const RightMenuBody = () => {
                 </div>
             </div>
 
-            <span className="my-12 pl-9">View All</span>
+
+            <div className="w-full flex justify-start my-12 pl-9">
+                <Button buttonType="ghost">
+                    View All
+                </Button>
+            </div>
             <div className="w-full flex justify-center">
 
                 <Button
