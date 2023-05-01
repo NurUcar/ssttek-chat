@@ -21,14 +21,14 @@ const RightMenuBody = () => {
                     <Button
                         rightIcon={<CancelSVG className="w-2 h-2 mr-2" />}
                         className="w-fit h-[22px] py-[7px]  bg-paleCerulean pl-1"
-                        spanClassName="text-white">
+                        spanClassName="text-white px-2">
 
                         Bot
                     </Button>
                     <Button
                         rightIcon={<CancelSVG className="w-2 h-2 mr-2" />}
                         className="w-fit h-[22px] bg-paleCerulean ml-4 pl-1"
-                        spanClassName="text-white">
+                        spanClassName="text-white px-2">
                         React
                     </Button>
                 </div>

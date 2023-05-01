@@ -3,7 +3,7 @@ import { ReactElement, useEffect, useState } from "react";
 
 interface IAvatarProps {
     avatar?: ReactElement;
-    userName: string;
+    userName?: string;
     className: string;
 }
 

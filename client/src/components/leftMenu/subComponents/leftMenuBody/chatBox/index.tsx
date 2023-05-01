@@ -8,18 +8,19 @@ interface IChatBoxProps {
     isCurrent: boolean;
     // contain user pp
     avatar?: ReactElement;
-    userName: string;
+    userName?: string;
     lastConversationTime: string;
     lastMessage: string;
     //is user online now
     isActiveUser: boolean;
 
+
+
 }
 const ChatBox = ({ isCurrent, avatar, userName, lastMessage, lastConversationTime, isActiveUser }: IChatBoxProps) => {
 
     return (
-        <div className={classNames('flex w-full border-t border-solid border-platinum opacity-100 h-[102px] px-[18px] py-[25px]',
-            isCurrent && "bg-darkGunmetal/[.08]")}>
+        <div className={'flex w-full h-full'}>
             <div className="flex h-full w-full">
                 <Avatar
                     className="w-[50px] h-[50px] "
@@ -27,14 +28,13 @@ const ChatBox = ({ isCurrent, avatar, userName, lastMessage, lastConversationTim
                     userName={userName}
                 />
                 <div className="flex flex-row grow justify-between ">
-                    <div className="flex flex-col  h-full ml-[17px] ">
+                    <div className="flex flex-col h-full ml-[17px] justify-start">
 
                         {
-                            userName !== "" ?
-                                <span className="leading-4 font-semibold text-[13px]">
+                            userName ?
+                                <span className="leading-4 font-semibold text-[13px] text-left">
                                     {userName}
                                 </span>
-
                                 :
                                 <div className="my-[5px]">
                                     <SstDarkLogoSVG className="w-[61px] h-[13px] " />
@@ -44,7 +44,7 @@ const ChatBox = ({ isCurrent, avatar, userName, lastMessage, lastConversationTim
 
                         <div className="flex ">
                             <span className={classNames(
-                                "leading-4 flex-1 text-philippineGray text-[13px] font-normal min-w-[120px] max-w-[131px] truncate mt-[6px]", isCurrent && "text-black")}>
+                                " text-left leading-4 flex-1 text-philippineGray text-[13px] font-normal min-w-[120px] max-w-[131px] truncate mt-[6px]", isCurrent && "text-black")}>
                                 {lastMessage}
                             </span>
                         </div>

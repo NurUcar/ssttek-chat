@@ -32,7 +32,7 @@ const Button = (props: IDefaultButtonProps) => {
       {...rest}
     >
       {leftIcon && <div>{leftIcon}</div>}
-      <span className={classNames("px-2 ", spanClassName)}>{children}</span>
+      <span className={classNames("w-full", spanClassName)}>{children}</span>
       {rightIcon && <div>{rightIcon}</div>}
     </button>
   );
