@@ -33,7 +33,11 @@ const ChatContainerTop = ({ user }: IChatContainerProps) => {
                                     <SstDarkLogoSVG className="w-16 h-[14px] " />
                                 </div>
                         }
-                        <div className="w-[10px] h-[10px] bg-yellowGreen rounded-full ml-2"></div>
+                        {
+                            user.isActiveUser &&
+
+                            <div className="w-[10px] h-[10px] bg-yellowGreen rounded-full ml-2"></div>
+                        }
                     </div>
                     <span className="font-medium text-base leading-4 text-darkLiver mt-2">{user.about}</span>
                 </div>

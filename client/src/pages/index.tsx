@@ -13,9 +13,9 @@ const Home: NextPage<any> = (props) => {
 		avatar: <SstUserSVG className="w-[61px] h-[13px]" />,
 		userName: "",
 		isCurrent: true,
-		lastConversationTime: "5 min",
+		lastConversationTime: "",
 		lastMessage: "Hi",
-		isActiveUser: false,
+		isActiveUser: true,
 		conversationHistory: [],
 		roomID: "1",
 		about: "Cloud, The Internet"
@@ -23,8 +23,8 @@ const Home: NextPage<any> = (props) => {
 	{
 		userName: "Nur Uçar",
 		isCurrent: false,
-		lastConversationTime: "",
-		lastMessage: "",
+		lastConversationTime: "5 min",
+		lastMessage: "Lorem ipsum sit ament",
 		isActiveUser: false,
 		conversationHistory: [],
 		roomID: "2",
@@ -35,7 +35,7 @@ const Home: NextPage<any> = (props) => {
 		isCurrent: false,
 		lastConversationTime: "",
 		lastMessage: "",
-		isActiveUser: false,
+		isActiveUser: true,
 		conversationHistory: [],
 		roomID: "3"
 	},
